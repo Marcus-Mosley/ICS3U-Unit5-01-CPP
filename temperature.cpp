@@ -6,13 +6,20 @@
 
 #include <iostream>
 
-float celsius;
-float fahrenheit;
+void fahrenheit() {
+    // This function converts celsius temperatures to fahrenheit
 
-void celsius_fahrenheit() {
+    float celsius;
+    float fahrenheit;
+
+    // Input
+
+    std::cout << "Enter the temperature in celsius: ";
+    std::cin >> celsius;
+
     // Process
 
-    fahrenheit = (1.8) * celsius + 32.0;
+    fahrenheit = (9.0 / 5.0) * celsius + 32.0;
 
     // Output
 
@@ -24,8 +31,5 @@ void celsius_fahrenheit() {
 main() {
     // This function calls other functions
 
-    std::cout << "Enter the temperature in celsius: ";
-    std::cin >> celsius;
-
-    celsius_fahrenheit();
+    fahrenheit();
 }
